@@ -71,7 +71,7 @@ export default async function buildPoseidon() {
             );
         }
         if (nOut == 1) {
-            return state[0]
+            return state[1]
         } else {
             return state.slice(0, nOut);
         }

@@ -147,6 +147,7 @@ export function createCode(nInputs) {
         C.label(strLabel);
     }
 
+    C.pop(); // return state[1]
     C.push("0x00");
     C.mstore();     // Save it to pos 0;
     C.push("0x20");
